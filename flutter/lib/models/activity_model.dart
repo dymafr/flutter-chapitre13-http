@@ -23,7 +23,7 @@ class Activity {
         name = json['name'],
         image = json['image'],
         city = json['city'],
-        price = json['price'].toDouble(),
+        price = json['price']?.toDouble(),
         status =
             json['status'] == 0 ? ActivityStatus.ongoing : ActivityStatus.done;
 
